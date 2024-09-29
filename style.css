@@ -1,0 +1,76 @@
+html,body{
+  scroll-behavior: smooth;
+}
+#banking{
+  background: url(./Assets/feature-section-2BG.svg) no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+#features{
+  background: url(./Assets/core-features-sectionBg.svg) no-repeat center;
+  background-size: cover;
+  height: 100%;
+}
+#support{
+  background: url(./Assets/CTABg.svg) no-repeat center;
+  background-size: cover;
+  height: 100%;
+}
+.scroll-on{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #02042a;
+  box-shadow: 0 0.125rem 1.75rem 0 rgb(0, 0, 0, 0.09);
+  transition: all 0.15s ease-in-out 0s;
+  z-index: 1000;
+}
+.companiesList{
+animation:10s infinite linear moveCompany;
+}
+
+@keyframes moveCompany {
+0%{
+  top:0;
+}
+100%{
+  top:-50%;
+}
+}
+
+/* slider */
+
+/* swiper button css */
+.slider-btn {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  transform: translateY(30px);
+  background-color: #E9F1FF;
+  transition: 0.2s;
+}
+.slider-btn:hover {
+  background-color: #d5e5ff;
+}
+.slider-btn::after,
+.slider-btn::before {
+  display: none;
+}
+.swiper-pagination-bullet {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.swiper-pagination-bullet-active {
+  background-color: #4070f4;
+}
+.swiper-button-next{
+  top: 30%;
+}
+.swiper-button-prev{
+  top: 30%;
+}
+@media screen and (max-width: 768px) {
+  .slider-btn {
+    display: none;
+  }
+}
